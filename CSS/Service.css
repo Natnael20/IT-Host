@@ -1,0 +1,111 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.first-container {
+    height: 60vh;
+}
+
+@media screen and (max-width: 798px) {
+    .first-container {
+        height: auto;
+    }
+}
+
+.breadcrumbs {
+    opacity: .5;
+}
+
+.mission, .vision, .driver {
+    background-color:rgb(3, 3, 72);
+    height: 100vh;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7;
+}
+
+.vision {
+    background-color:midnightblue;
+}
+
+.driver {
+    background-color:darkblue;
+}
+
+.content1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 23px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(46, 23, 121) 0%, rgb(10, 2, 40) 100%);
+    font-size: 16px;
+    transition: all 1s ease-in-out;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 10px;
+    transition: all 1s ease-out;
+  }
+
+ .content-paragraph, .content-img {
+    width: 40%;
+  }
+
+  .collapsible::after {
+    content: '+ ';
+    display: flex;
+    justify-content: end;
+  }
+
+  .active::after {
+    content: '- ';
+  }
+
+  .collapsible:hover {
+    background-color: #ddd;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+.footer {
+    margin-top: 10%;
+}

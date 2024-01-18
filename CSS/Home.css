@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.container {
+    margin-top: 8%;
+}
+
+.btn {
+    background-color: var(--bs-pink);
+    color: var(--bs-light);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: var(--bs-pink);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.first-container {
+    background-image: url("https://preview.colorlib.com/theme/ithost/img/bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 110vh;
+    margin-top: 0%;
+}
+
+@media screen and (max-width:768px) {
+    .first-container {
+        height: auto;
+    }
+
+    .inside-first-container .row div:nth-child(2) {
+        margin-top: 20%;
+    }
+
+}
+.inside-first-container {
+    margin-top: 5%;
+}
+
+.inside-first-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1900px) {
+    .inside-first-container .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width:90%;
+    }
+}
+
+
+.nav-link {
+    color: var(--bs-light);
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: var(--bs-pink);
+}
+#rocket {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        left: 20px;
+        bottom: 20px;
+    }
+    25% {
+        left: -20px;
+        bottom: 20px;
+    }
+    50% {
+        left: -20px;
+        bottom: 0px;
+    }
+    75% {
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.third-container {
+    background-image: url("https://preview.colorlib.com/theme/ithost/img/bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.search_website input[type="search"]  {
+    padding: 12px;
+    width: 70%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.search_website .btn {
+    width: 20%;
+}
+
+.progress {
+    background-color: white;
+}
+.illustrator, .Photoshop, .SEO, .E-commerce, .HTML {
+    position: relative;
+}
+
+.illustrator p:nth-child(2), .SEO p:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.Illustrator-progress, .Photoshop-progress, .SEO-progress, .E-commerce-progress, .HTML-progress {
+    height: .2cm;
+    border-radius: 50px;
+    background-color: rgb(238, 246, 249);
+    width: 100%;
+}
+
+.Illustrator-progress .progress, .SEO-progress .progress {
+    height: .2cm;
+    background: #eb2b63;
+    width: 80%;
+}
+.SEO-progress .progress {
+    background:#d22beb;
+}
+
+.Photoshop p:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.Photoshop-progress .progress {
+    height: .2cm;
+    background: #eb2bae;
+    width: 90%;
+}
+
+.E-commerce p:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+}
+
+.E-commerce-progress .progress {
+    height: .2cm;
+    background: #eb2bae;
+    width: 60%;
+}
+
+.HTML p:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.HTML-progress .progress {
+    height: .2cm;
+    background: #732beb;
+    width: 70%;
+}
+
+.slider {
+    width: 100%;
+    height:280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+}
+
+.dots {
+    display: flex;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    bottom: 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* Highlight active dot */
+.active-dot {
+    background-color: #e74c3c;
+}
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide.next {
+    transform: translateX(100%);
+}
+
+.slide.prev {
+    transform: translateX(-100%);
+}
+
+.user-comment {
+    background-color:  rgb(238, 246, 249);
+    padding: 40px;
+}
+
+.user-profile {
+    margin-top: 4%;
+}
+
+.user-pic img {
+    border-radius: 50%;
+    height: 10vh;
+}
+
+@media screen and (max-width:768px) {
+    .slider-col {
+        margin-top: 20%;
+    }
+    .slider {
+        height: 60vh;
+    }
+}
+
+.basic-plan, .Star-plan {
+    background: linear-gradient(to right, rgb(114, 70, 179) 0%, rgb(67, 20, 131) 100%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.basic-plan h4 {
+    margin-top: 10px;
+}
+
+.plan {
+    background-color:  rgb(238, 246, 249);
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-plan {
+    opacity: .5;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.button-plan .btn {
+    width: 100%;
+}
+.Star-plan {
+    background: rgb(235, 43, 99);
+}
+
+.Star-plan h4 {
+    margin-top: 10px;
+}
+
+.plan2 {
+    border: 3px solid var(--bs-pink);
+    margin-top: 2%;
+    border-radius: 20px;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.last-container {
+    background: url("https://preview.colorlib.com/theme/ithost/img/banner-bg.jpg.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer {
+    background-color: #200545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.social-media i {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    color: rgb(255, 255, 255);
+    background: rgb(73, 31, 112);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 13px;
+    font-size: 12px;
+    transition: all 0.4s ease 0s;
+}
+
+.useful-links ul li {
+    background: transparent;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.useful-links ul li a{
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.useful-links ul li a::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left:0;
+    width:100%;
+    height: 3px;
+    background-color: white;
+    transform-origin:left;
+    transform: scaleX(0);
+    transition: all .5s ease-in-out;
+    border-radius:50px;
+}
+
+.useful-links ul li a:hover::before {
+    transition: all .5s ease-in-out;
+    transform: scaleX(1);
+
+
+}
+
+.hosts {
+    display: inline-flex;
+    gap: 10px;
+    line-height: 1;
+}
+
+.host-img {
+    width: 25%;
+}
+
+.host-img img {
+    border-radius: 10px;
+}
+
+.host-description h5 {
+    opacity: .8;
+}
+
+.host-description p {
+    color: var(--bs-pink);
+    font-weight: bold;
+}
+
+li a:hover {
+    color:#0d6efd;
+}

@@ -1,0 +1,54 @@
+.first-container {
+    height: 60vh;
+}
+
+@media screen and (max-width: 798px) {
+    .first-container {
+        height: auto;
+    }
+}
+
+.breadcrumbs {
+    opacity: .5;
+}
+
+.third-container {
+    background-image: none;
+    margin-top: 10px;
+}
+
+#search {
+    background-color: var(--bs-pink);
+    opacity: .05;
+    color: #000;
+}
+
+.success {
+    background-image: url("https://preview.colorlib.com/theme/ithost/img/bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 10%;
+    display: grid;
+    justify-content: center;
+}
+
+
+.employee {
+    border-radius: 30px;
+}
+
+@media screen and (max-width:798px) {
+    .success {
+        height: auto;
+    }
+    .employee {
+        text-align: center;
+    }
+}
+
+.footer {
+    margin-top: 10%;
+}
